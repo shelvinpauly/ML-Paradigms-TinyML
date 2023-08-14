@@ -1,0 +1,4 @@
+#!/bin/sh
+# don't run this--you'll have to type it out manually or else you won't get gpu speedups
+module load Python3/3.9.12
+sbatch --partition=class --account=class --qos=default --gres=gpu:1 --time=1-0:0:0 bash_scripts/train_ensemble.sh
